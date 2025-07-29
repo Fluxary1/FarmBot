@@ -1,39 +1,34 @@
-# Farm Bot - Minecraft Otomasyonu
+# FarmBot
 
-Bu uygulama, Minecraft'ta tekrar eden görevleri otomatikleştirmek için tasarlandı.
+Bu, Minecraft'ta sana yardımcı olmak için hazırlanmış basit bir otomasyon botudur.
 
----
+## Nedir Bu?
+
+Bu FarmBot, Minecraft'ta belirli tekrarlayan görevleri senin yerine yapması için tasarlandı. Özellikle iki ana farm türü için otomasyon sağlar:
+
+* **XP Farmı (Zombi Farmı):** Genellikle zombi farmı gibi yerlerde fare tıklamalarını otomatikleştirir, böylece sen AFK kalırken XP kasabilirsin.
+* **Raid Farmı:** Raid farmında gerekli iksir ve kılıç slotuna geçişleri ve tıklamaları otomatikleştirir.
+
+Botu süresiz çalıştırabilir veya belirli bir süre sonra otomatik olarak duracak şekilde ayarlayabilirsin. Ayrıca süre bitiminde sadece botu durdurabilir, Minecraft'ı kapatabilir veya hem Minecraft'ı hem de programı tamamen kapatabilirsin.
 
 ## Nasıl Çalışır?
 
-* **Zombi Farmı:**
-    * Süresiz tıklama.
-    * Belirlediğiniz süre boyunca tıklama ve bitince ne yapacağını seçme (dur, Minecraft'ı kapat, ikisini de kapat).
-* **Raid Farmı:**
-    * Tek "Başlat" butonuyla çalışır.
-    * Başlattığınızda 5 saniye bekler.
-    * Minecraft'a geçip iksiri (8. slotta olmalı) **1.6 saniye basılı tutarak içer**.
-    * Kılıca geçer (1. slotta olmalı).
-    * Ardından **5 dakika 40 saniye (340 saniye) boyunca her 2 saniyede bir** saldırı yapar.
-    * Süre sonunda otomatik olarak durur.
-* **Durdurma:** "Otomasyonu Durdur" butonuyla istediğiniz zaman durdurabilirsiniz.
+1.  **Programı Başlat:** `FarmBot.exe` dosyasını (veya Python dosyasını) çalıştır.
+2.  **Farm Türünü Seç:** Ana ekranda "XP FARM" veya "RAID FARM" seçeneklerinden birini tıkla.
+    * **XP Farmı için:** Süresiz mi yoksa süreli mi çalışacağını seçersin. Süreli seçersen ne kadar süre çalışacağını girer, ardından süre bitiminde ne yapılacağını belirlersin.
+    * **Raid Farmı için:** Doğrudan başlar ve ayarları sabittir.
+3.  **Botu Başlat:** Seçimlerini yaptıktan sonra "Başlat" düğmesine tıkla.
+4.  **Oyun Ekranına Geç:** Bot başladıktan sonra 5 saniye içinde Minecraft ekranına geçiş yaptığından ve botun tıklamaları doğru yere yapabildiğinden emin ol. Oyun içinde klavye menüsünün (`ESC` ile açılan) kapalı olduğundan emin olman önemli.
+5.  **Durdurmak İçin:** İstediğin zaman programdaki "STOP" düğmesine basarak otomasyonu durdurabilirsin.
 
----
+## Kurulum (Python ile Çalıştırmak İstersen)
 
-## Kurulum ve Kullanım
+Eğer `.exe` dosyasını kullanmak yerine Python kodunu doğrudan çalıştırmak istersen, bilgisayarında Python'ın kurulu olması ve şu kütüphanelere ihtiyacın var:
 
-1.  **Gerekenler:** Python yüklü olmalı. Komut istemcisine `pip install pyautogui customtkinter` yazarak gerekli kütüphaneleri kurun.
-2.  **Çalıştırma:** Kodu bir `.py` dosyası olarak kaydedip komut istemcisinden `python dosya_adiniz.py` ile çalıştırın.
-3.  **Minecraft Ayarı:** Raid Farmı için iksiriniz **8. slotta**, kılıcınız **1. slotta** olmalı. Oyuna odaklandığınızdan emin olun.
+* `customtkinter`
+* `pyautogui`
 
----
+Bu kütüphaneleri yüklemek için komut istemcisine şunları yazabilirsin:
 
-## Önemli Not
-
-Bot çalışırken fare ve klavye kontrolünü ele alır. Güvenliğiniz için kullanırken dikkatli olun. Online sunucularda kullanım kurallara aykırı olabilir ve banlanmaya yol açabilir. Sorumluluk size aittir.
-
----
-
-Bu projeyi yapay zeka kullanarak eğitim amaçlı yaptım.
-
-Yaptıklarımı şimdilik hatıra ve anı kalması için buraya yüklüyorum.
+```bash
+pip install customtkinter pyautogui
