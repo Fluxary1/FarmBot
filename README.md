@@ -14,7 +14,7 @@ Bu uygulama, Minecraft'ta tekrar eden görevleri otomatikleştirmek için tasarl
     * Başlattığınızda 5 saniye bekler.
     * Minecraft'a geçip iksiri (8. slotta olmalı) **1.6 saniye basılı tutarak içer**.
     * Kılıca geçer (1. slotta olmalı).
-    * Ardından **5 dakika 40 saniye (355 saniye) boyunca her 2 saniyede bir** saldırı yapar.
+    * Ardından **5 dakika 40 saniye (340 saniye) boyunca her 2 saniyede bir** saldırı yapar.
     * Süre sonunda otomatik olarak durur.
 * **Durdurma:** "Otomasyonu Durdur" butonuyla istediğiniz zaman durdurabilirsiniz.
 
