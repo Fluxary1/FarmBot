@@ -50,7 +50,7 @@ class FarmBotApp(ctk.CTk):
         # Raid Farmı için sadece tek "Başlat" butonu
         button_raid_start = ctk.CTkButton(master=self.main_page_frame, text="Raid Farmı - Başlat", corner_radius=25,
                                           fg_color="#4E71FF", hover_color="#5000DA",
-                                          command=lambda: self.start_automation("Raid Farm Botu", duration=355, end_action="stop_only", is_raid_farm=True))
+                                          command=lambda: self.start_automation("Raid Farm Botu", duration=340, end_action="stop_only", is_raid_farm=True))
         button_raid_start.pack(pady=10, anchor="center")
         
         ctk.CTkFrame(master=self.main_page_frame, height=2, fg_color="gray").pack(fill="x", pady=20)
