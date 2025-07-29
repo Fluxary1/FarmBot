@@ -10,7 +10,7 @@ class FarmBotApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.geometry("450x700")
+        self.geometry("450x600")
         self.title("FarmBot")
         ctk.set_appearance_mode("dark")
         self.resizable(False, False)
